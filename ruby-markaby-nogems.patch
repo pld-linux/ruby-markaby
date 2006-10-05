@@ -1,0 +1,11 @@
+diff -ur ruby-markaby-0.4-o/lib/markaby.rb ruby-markaby-0.4/lib/markaby.rb
+--- ruby-markaby-0.4-o/lib/markaby.rb	1969-12-31 17:00:00.000000000 -0700
++++ ruby-markaby-0.4/lib/markaby.rb	2006-08-08 15:48:49.000000000 -0600
+@@ -23,7 +23,6 @@
+ end
+ 
+ unless defined?(Builder)
+-  require 'rubygems'
+   require 'builder'
+ end
+ 
