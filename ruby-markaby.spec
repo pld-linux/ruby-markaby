@@ -1,5 +1,5 @@
 Summary:	A templating language for Ruby
-Summary(pl):	Jêzyk szablonów dla jêzyka Ruby
+Summary(pl.UTF-8):   JÄ™zyk szablonÃ³w dla jÄ™zyka Ruby
 Name:		ruby-markaby
 Version:	0.4
 Release:	1
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Markaby is a templating language for Ruby, with a plugin for Rails,
 which allows you to write HTML templates in pure-Ruby (a la Builder).
 
-%description -l pl
-Markaby to jêzyk szablonów dla jêzyka programowania Ruby, z wtyczk±
-dla Rails pozwalaj±c± na pisanie szablonów HTML w czystym Rubym
+%description -l pl.UTF-8
+Markaby to jÄ™zyk szablonÃ³w dla jÄ™zyka programowania Ruby, z wtyczkÄ…
+dla Rails pozwalajÄ…cÄ… na pisanie szablonÃ³w HTML w czystym Rubym
 (podobnie jak Builder).
 
 %prep
