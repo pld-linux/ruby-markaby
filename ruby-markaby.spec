@@ -1,5 +1,5 @@
 Summary:	A templating language for Ruby
-Summary(pl.UTF-8):   Język szablonów dla języka Ruby
+Summary(pl.UTF-8):	Język szablonów dla języka Ruby
 Name:		ruby-markaby
 Version:	0.4
 Release:	1
