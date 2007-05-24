@@ -2,7 +2,7 @@ Summary:	A templating language for Ruby
 Summary(pl.UTF-8):	Język szablonów dla języka Ruby
 Name:		ruby-markaby
 Version:	0.5
-Release:	1
+Release:	2
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://code.whytheluckystiff.net/gems/markaby-%{version}.gem
@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc rdoc
 %{ruby_rubylibdir}/markaby*
-%{ruby_ridir}/*
+%{ruby_ridir}/Markaby
