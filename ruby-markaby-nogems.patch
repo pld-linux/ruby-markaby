@@ -1,7 +1,16 @@
-diff -ur ruby-markaby-0.4-o/lib/markaby.rb ruby-markaby-0.4/lib/markaby.rb
---- ruby-markaby-0.4-o/lib/markaby.rb	1969-12-31 17:00:00.000000000 -0700
-+++ ruby-markaby-0.4/lib/markaby.rb	2006-08-08 15:48:49.000000000 -0600
-@@ -23,7 +23,6 @@
+diff -Nur ruby-markaby-0.5.orig/lib/markaby.rb ruby-markaby-0.5.nogems/lib/markaby.rb
+--- ruby-markaby-0.5.orig/lib/markaby.rb	1969-12-31 17:00:00.000000000 -0700
++++ ruby-markaby-0.5.nogems/lib/markaby.rb	2008-09-17 17:57:13.000000000 -0600
+@@ -4,8 +4,6 @@
+ # as well as the full set of Markaby classes.
+ #
+ # For a full list of features and instructions, see the README.
+-$:.unshift File.expand_path(File.dirname(__FILE__))
+-
+ # Markaby is a module containing all of the great Markaby classes that
+ # do such an excellent job.
+ # 
+@@ -25,7 +23,6 @@
  end
  
  unless defined?(Builder)
@@ -9,3 +18,42 @@ diff -ur ruby-markaby-0.4-o/lib/markaby.rb ruby-markaby-0.4/lib/markaby.rb
    require 'builder'
  end
  
+diff -Nur ruby-markaby-0.5.orig/lib/markaby.rb.orig ruby-markaby-0.5.nogems/lib/markaby.rb.orig
+--- ruby-markaby-0.5.orig/lib/markaby.rb.orig	1969-12-31 17:00:00.000000000 -0700
++++ ruby-markaby-0.5.nogems/lib/markaby.rb.orig	1969-12-31 17:00:00.000000000 -0700
+@@ -0,0 +1,35 @@
++# = About lib/markaby.rb
++#
++# By requiring <tt>lib/markaby</tt>, you can load Markaby's dependency (the Builder library,)
++# as well as the full set of Markaby classes.
++#
++# For a full list of features and instructions, see the README.
++$:.unshift File.expand_path(File.dirname(__FILE__))
++
++# Markaby is a module containing all of the great Markaby classes that
++# do such an excellent job.
++# 
++# * Markaby::Builder: the class for actually calling the Ruby methods
++#   which write the HTML.
++# * Markaby::CSSProxy: a class which adds element classes and IDs to
++#   elements when used within Markaby::Builder.
++# * Markaby::MetAid: metaprogramming helper methods.
++# * Markaby::Tags: lists the roles of various XHTML tags to help Builder
++#   use these tags as they are intended.
++# * Markaby::Template: a class for hooking Markaby into Rails as a
++#   proper templating language.
++module Markaby
++  VERSION = '0.5'
++
++  class InvalidXhtmlError < Exception; end
++end
++
++unless defined?(Builder)
++  require 'rubygems'
++  require 'builder'
++end
++
++require 'markaby/builder'
++require 'markaby/cssproxy'
++require 'markaby/metaid'
++require 'markaby/template'
