@@ -11,7 +11,7 @@ Patch0:		%{name}-nogems.patch
 URL:		http://markaby.rubyforge.org
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	setup.rb = 3.4.1
 Requires:	ruby-builder
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
