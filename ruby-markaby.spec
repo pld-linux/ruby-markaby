@@ -7,6 +7,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/markaby-%{version}.gem
 # Source0-md5:	8adda360573e48fa96a5470b87851e7c
+Patch0:		%{name}-versionfile.patch
 URL:		http://markaby.rubyforge.org
 BuildRequires:	ruby-rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -28,6 +29,7 @@ dla Rails pozwalającą na pisanie szablonów HTML w czystym Rubym
 %setup -q -c
 tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
 cp %{_datadir}/setup.rb .
+%patch0 -p1
 
 %build
 ruby setup.rb config \

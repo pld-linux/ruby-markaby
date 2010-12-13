@@ -1,0 +1,14 @@
+diff -ur ruby-markaby-0.7.1-o/lib/markaby.rb ruby-markaby-0.7.1/lib/markaby.rb
+--- ruby-markaby-0.7.1-o/lib/markaby.rb	1970-01-01 01:00:00.000000000 +0100
++++ ruby-markaby-0.7.1/lib/markaby.rb	2010-12-13 05:42:12.000000000 +0100
+@@ -19,8 +19,7 @@
+ # * Markaby::Template: a class for hooking Markaby into Rails as a
+ #   proper templating language.
+ module Markaby
+-  version_file = File.expand_path(File.dirname(__FILE__) + "/../VERSION")
+-  VERSION      = File.read(version_file).strip
++  VERSION      = "0.7.1"
+ 
+   class InvalidXhtmlError < Exception; end
+ end
+Only in ruby-markaby-0.7.1/lib: markaby.rb~
