@@ -12,7 +12,7 @@ Patch1:		%{name}-192.patch
 URL:		http://markaby.rubyforge.org
 BuildRequires:	ruby-rake
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.4.1
+BuildRequires:	setup.rb >= 3.4.1
 Requires:	ruby-builder
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
