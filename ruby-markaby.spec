@@ -30,8 +30,8 @@ dla Rails pozwalającą na pisanie szablonów HTML w czystym Rubym
 %setup -q -c
 tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
 cp %{_datadir}/setup.rb .
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 ruby setup.rb config \
